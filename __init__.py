@@ -3,23 +3,12 @@ from start_as_owner import *
 from start_as_user import *
 import owner_db as odb
 import datetime
-    
-
-
 
 def   __init__():
     #all extra greeting here
     bf.nnprt("")
-    #bf.nnprt("")
-    '''
-    bf.nnprt("           /---------------)          @_                                  /---------------) ")
-    bf.nnprt("        /                     )            (       -_       )                   /                       ) ")
-    bf.nnprt("     /------------- )                (          -_  )                   / ------------- )   ")
-    bf.nnprt("   /                                          (_____) -___)            /              ")
-    bf.nnprt("  ----------------------------------------------------------------------")
-    bf.nnprt("         PASSION                             &                      PROFESSION   ")
-    bf.nnprt("  ---------------------------------------------------------------------- ")
-    '''
+
+   
     bf.nnprt(r"""         ____               _                ___     ____             __               _             
         |  _ \ __ _ ___ ___(_) ___  _ __    ( _ )   |  _ \ _ __ ___  / _| ___  ___ ___(_) ___  _ __  
         | |_) / _` / __/ __| |/ _ \| '_ \   / _ \/\ | |_) | '__/ _ \| |_ / _ \/ __/ __| |/ _ \| '_ \ 
@@ -45,7 +34,6 @@ def   __init__():
     finally:
         #Function which checks and creates the table of the user name and this is the profile
         bf.easy_center_align("THANK YOU")
-        #check_profile()
 
 def check_user_profile(username):
     """Checks the username and give it the suitable user Profile"""
@@ -59,7 +47,6 @@ def ask_username():
     bf.easy_center_align("Your profile is getting verified")
     if (username == "infinity"):
         bf.hanprt("Please enter the password to start as admin :")
-        #password =  input(" Password : ").lower()
         
         password = bf.ask_input()
         if(password == "12345"):
@@ -69,16 +56,8 @@ def ask_username():
             hanprt("Invalid Password")
             ask_username()
     else:
-        #check_user_profile(username)
         start_as_user(username)
             
-            
-    
 
-__init__()      
-
-
-
-
-
-    
+if __name__ == "__main__":
+    __init__()     
