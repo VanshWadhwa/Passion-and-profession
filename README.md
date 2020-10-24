@@ -7,6 +7,13 @@ All the things are solved with chat based interactions.
 This programme is made in such a way that its functions can be used with different API preferably with Whatsapp web API ,
 Google assistant API, Selenium web crawling , Voice recognition of Google or any other chat-based interaction.
 
+
+## System Requirements
+
+* Platform: Microsoft Windows
+* Software: Mysql , Python
+
+
 ## Modules Used : 
 * __init__ – 
 The main file for running the program which ask the user for the username ,checks the profile and pass it to the the other module.               
@@ -30,3 +37,4 @@ This module contains all the functions related to date and time.
 This module contains all the functions related to the operation in the platform.
 * mysql.connector –
 This module provides the pathway to mysql.
+
